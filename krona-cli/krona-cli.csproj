@@ -1,0 +1,38 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  
+  <PropertyGroup>
+    <Copyright>2020 The Krona Project</Copyright>
+    <AssemblyTitle>Krona.CLI</AssemblyTitle>
+    <Version>0.1.0</Version>
+    <Authors>The Krona Project</Authors>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <AssemblyName>krona-cli</AssemblyName>
+    <OutputType>Exe</OutputType>
+    <PackageId>Krona.CLI</PackageId>
+    <RootNamespace>Krona</RootNamespace>
+    <Company>The Krona Project</Company>
+    <Product>Krona.CLI</Product>
+    <Description>Krona.CLI</Description>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)'=='Release'">
+    <DebugType>none</DebugType>
+    <DebugSymbols>False</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Update="config.json;config.mainnet.json;config.testnet.json;protocol.json;protocol.mainnet.json;protocol.testnet.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.ServiceProcess.ServiceController" Version="4.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\krona-core\krona-core.csproj" />
+  </ItemGroup>
+
+</Project>

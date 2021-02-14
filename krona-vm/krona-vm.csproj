@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Copyright>2020 The Krona Project</Copyright>
+    <AssemblyTitle>Krona.VM</AssemblyTitle>
+    <Description>Krona.VM</Description>
+    <Version>0.4.0</Version>
+    <Authors>The Krona Project</Authors>
+    <TargetFrameworks>netstandard1.6;net461</TargetFrameworks>
+    <AssemblyName>Krona.VM</AssemblyName>
+    <PackageId>Krona.VM</PackageId>
+    <PackageTags>Krona;Blockchain</PackageTags>
+    <PackageProjectUrl>https://github.com/krona-project/krona-vm</PackageProjectUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/krona-project/krona-vm.git</RepositoryUrl>
+    <NetStandardImplicitPackageVersion Condition=" '$(TargetFramework)' == 'netstandard1.6' ">1.6.0</NetStandardImplicitPackageVersion>
+    <RootNamespace>Krona.VM</RootNamespace>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <ItemGroup Condition=" '$(TargetFramework)' == 'net461' ">
+    <Reference Include="System.Numerics" />
+    <Reference Include="System" />
+    <Reference Include="Microsoft.CSharp" />
+  </ItemGroup>
+
+</Project>

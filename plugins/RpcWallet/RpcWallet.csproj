@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Version>2.12.2</Version>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>Krona.Plugins</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\krona-core\krona-core.csproj" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <None Update="RpcWallet\config.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

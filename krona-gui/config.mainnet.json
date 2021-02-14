@@ -1,0 +1,18 @@
+﻿{
+  "ApplicationConfiguration": {
+    "Paths": {
+      "Chain": "Chain_{0}",
+      "Index": "Index_{0}",
+      "CertCache": "Certs"
+    },
+    "P2P": {
+      "Port": 10333,
+      "WsPort": 10334
+    },
+    "Urls": {
+      "AddressUrl": "https://blockexplorer.xknl.org/address/{0}",
+      "AssetUrl": "https://blockexplorer.xknl.org/api/main_net/v1/get_asset/{0}",
+      "TransactionUrl": "https://blockexplorer.xknl.org/transaction/{0}"
+    }
+  }
+}
